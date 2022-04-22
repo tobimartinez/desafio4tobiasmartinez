@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr auto ;
+    height: 100%;
+    grid-template-areas: "nav     nav      nav"
+                         "cuerpo1 cuerpo1 cuerpo1"
+                         "pie      pie     pie";
+}
+.icono{
+    height: 50px;
+    width: 78px;
+}
+.icono img{
+    width: 100%;
+}
+.nav{
+    grid-area: nav;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: burlywood;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    height: 80px;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px;
+    padding-right: 50px;
+    padding-left: 120px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenido{
+    grid-area: cuerpo1;
+}
+.cuerpo1{
+    display: flex;
+    height: 400px;
+    background-image: url(../img/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.cuerpo1 h1{
+    display: flex;
+    color: white;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    z-index: 10;
+    margin-top: 150px;
+    font-size: 40px;
+}
+.cuerpo1 p{
+    margin-top: 20px;
+    color: white;
+    font-family: cursive;
+    font-size: 16px;
+}
+.cuerpo2{
+    display: flex;
+    background-color: #0F0301;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+    border-top: 40px solid rgba(131, 71, 71, 0.075);
+}
+
+.cuerpo2 h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 26px;
+    color: white;
+}
+.video{
+    width: 560px;
+    height : 315px;
+}
+.cuerpo3{
+    background-color: rgba(34, 23, 15, 0.884);
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 40px solid  rgba(29, 14, 14, 0.068);
+    grid-area: venta3;
+}
+.venta1{
+    
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.cuerpo3 img{
+    height: 400px;
+    width: 400px;
+
+}
+.cuerpo3 input{
+    color: black;
+    height: 30px;
+    width: 60px;
+}
+.cuerpo3 h3{
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cuerpo4{
+    border-top: 40px solid rgba(0, 0, 0, 0.349);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(109, 89, 62);
+    height: 500px;
+    grid-area: cuerpo4;
+}
+.cuerpo4__texto{
+    height: 400px;
+    display: flex;
+    width: 300px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.cuerpo4 img{
+    height: 400px;
+    width: 400px;
+}
+.cuerpo4__texto h3{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    color: white;
+}
+.cuerpo4__texto h4{
+    font-size: 22px;
+    color: white;
+    font-family: sans-serif;
+}
+.pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 40px solid rgba(0, 0, 0, 0.342);
+    background-color: rgb(41, 31, 31);
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    grid-area: pie;
+    width: 100%;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    text-align: start;
+    text-decoration: none;
+    font-size: 14px;
+    margin:10px
+}
+footer p{
+    display: flex;
+    font-size: 14px;
+}
+.cuerpopizza{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px auto 1fr;
+    height: 100vh;
+    grid-template-areas: "nav nav nav"
+                         "main main main"
+                         "pie  pie  pie";
+}
+.contenidopizza{
+    grid-area: main;
+}
+.pizza{
+    background-color: rgb(41, 31, 31);
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 250px;
+    color: rgb(226, 226, 8);
+}
+.pizza h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+}
+.pizza ul{
+    list-style-type: none;
+    font-size: 18px;
+}
+.ventadepizza{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    background-color:   rgba(19, 15, 15, 0.459);
+    border-top: 40px solid rgba(19, 15, 15, 0.459);
+    border-bottom: 40px solid rgba(19, 15, 15, 0.459);
+}
+.tarjetas{
+    background-color: black;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: yellow;
+}
+.tarjetas img{
+    width: 200px;
+    height: 200px;
+}
+.nosotros{
+    display: grid;
+    height: 600px;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 1fr 1fr;
+    grid-template-areas: "nav         nav   nav"
+                         "contenido contenido contenido"
+                         "pie        pie      pie";
+}
+.contenidonos{
+    display: grid;
+    grid-area: contenido;
+}
+.nosotrostitulo{
+    padding-top: 60px;
+    height: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+
+}
+
+.nosotrosfinal{
+    background-color: rgba(19, 15, 15, 0.918);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+.nosotrosfinal img{
+    height: 400px;
+    width:  400px;
+}
+.nosotrostexto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: yellow;
+}
+.nosotrostexto h3{
+    padding-bottom: 40px;
+    font-size: 33px;
+
+}
+.nosotrostexto p{
+    padding-bottom: 60px;
+    font-size: 16px;
+}
+.empanadascont{
+    display: grid;  
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 800px 1fr;
+    grid-template-areas: "nav nav nav"
+                          "contenido contenido contenido"
+                          "pie pie pie";
+}
+.cuerpoempanadas{
+    grid-area: contenido;
+    width: 100%;
+}
+.empanadas{
+    background-color:  rgba(5, 4, 4, 0.918);
+    height: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    color:yellow;
+    width: 100%;
+}
+.empanadas h1{
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.empanadas ul{
+    font-size: 20px;
+    list-style-type: none;
+}
+.cuerpotarjetasemp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    background-color:   rgba(19, 15, 15, 0.459);
+    border-top: 40px solid rgba(19, 15, 15, 0.459);
+    border-bottom: 40px solid rgba(19, 15, 15, 0.459);
+}
+.ventaempandas{
+    background-color: black;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: yellow;
+}
+.ventaempandas img{
+    width: 200px;
+    height: 200px;
+}
+.contactanos{
+    display: grid;
+    height: 800px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+    grid-template-areas: "nav  nav  nav"
+                          "contenido contenido contenido"
+                          "pie     pie       pie";
+}
+.contactocont{
+    grid-area: contenido;
+    background-color: rgba(19, 15, 15, 0.918);
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    padding-top: 40px;
+    color:yellow
+ }
+.formulario h1{
+    font-size: 30px;
+ }
+@media screen and (max-width: 320px){
+ .grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,auto) ;
+    height: 100vh;
+    width: 319px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 319px;
+        grid-template-rows: 80px auto 1fr ;
+    }
+    .nav{
+        flex: nowrap;
+        justify-content: center;
+        align-items: left;
+        width: 100%;
+    }
+    .menu ul li{
+        display: inline-block;
+        font-size: 17px;
+        padding: 30px;
+    }
+    .icono{
+        height: 50px;
+        width: 70px;
+    }
+    .cuerpo1{
+        display: flex;
+        height: 400px;
+        background-image: url(../img/fondo2.jpg);
+        background-size: cover;
+        width: 100%;
+    }
+    .cuerpo1 h1{
+        display: flex;
+        color: white;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        z-index: 10;
+        margin-top: 150px;
+        font-size: 40px;
+    }
+    .cuerpo1 p{
+        margin-top: 20px;
+        color: white;
+        font-family: cursive;
+        font-size: 16px;
+    }
+    .cuerpo2{
+        align-items: center;
+        justify-content: space-evenly;
+        border-top: 20px solid rgba(131, 71, 71, 0.075);
+        width: 100%;
+        
+    }
+    .pizza{
+        background-color: rgb(41, 31, 31);
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 250px;
+        color: rgb(226, 226, 8);
+        width: 100%;
+    }
+    .nosotros__img{
+        width: 400px;
+        height: 400px;
+    }
+    .nosotrosfinal img{
+        height: 200px;
+        width:  200px;
+    }
+
+
+
+
+}
+
+
