@@ -332,6 +332,8 @@ footer p{
     font-size: 33px;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 90px;
+    animation-name: deslizdentro;
+    animation-duration: 2s;
 }
 .empanadas ul{
     font-size: 20px;
@@ -355,6 +357,7 @@ footer p{
     flex-direction: column;
     justify-content: space-evenly;
     color: yellow;
+    transition: all 2s;
 }
 .ventaempandas img{
     width: 200px;
@@ -397,6 +400,9 @@ footer p{
     background-color: burlywood;
 }
 .tarjetas:hover{
+    transform: rotate(360deg);
+}
+.ventaempandas:hover{
     transform: rotate(360deg);
 }
 @keyframes achicar{
@@ -518,10 +524,6 @@ footer p{
         height: 200px;
         width:  200px;
     }
-
-
-
-
 }
 
 
